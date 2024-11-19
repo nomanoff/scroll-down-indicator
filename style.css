@@ -11,6 +11,7 @@ html{
     width: 100%;
     height: 100vh;
     background-color: #151515;
+    position: relative;
 }
 
 .scroll-down{
@@ -81,4 +82,47 @@ html{
     100%{
         opacity: 1;
     }
+}
+
+.write{
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 37%;
+    top: 20%;
+    /* background: #042104; */
+    animation: animateBg 10s linear infinite;
+    align-items: center;
+}
+
+@keyframes animateBg{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.write h1{
+    font-weight: none;
+    font-style: normal;
+    font-size: 25px;
+    padding-bottom: 20px;
+    color: #00ff0a;
+}
+
+.write .link{
+    display: flex;
+    justify-content: space-around;
+}
+
+.write .link a{
+    color: #00ff0a;
+    font-size: 34px;
+    text-decoration: none;
 }
